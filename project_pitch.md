@@ -5,10 +5,10 @@ Professor Dahilig, CMSI3801, Languages and Automata I
 
 **Project Overview:**
 
-I will be making a website for Paso Homes, a business start up in Dr. D'Mello's business incubator course. Paso Homes is a 100% online platform where customers can rent living spaces by the month. The website will contain data from homeowners that the customers can look up and get connected with. It will be written in Javascript and HTML and will use APIs such as Firebase for storing data, Google Maps for displaying the locations for the customers, and Twilio for SMS integration. 
+I will be making a website for Paso Homes, a business start-up in Dr. D'Mello's business incubator course. Paso Homes is a 100% online platform where customers can rent living spaces by the month. The website will contain data from homeowners that the customers can look up and connect with. It will be written in Javascript and HTML. It will use APIs such as Firebase for storing data, Google Maps for displaying the locations of homes for rent, and Twilio for SMS integration. 
 
 Notes: 
-- A friend of mine has a friend in that class that was looking for a coder for their startup. I decided to help so that I could get more experience. 
+- A friend of a friend is in ENTR4380 and was looking for a coder for their startup. I am not in that course, but I decided to help so that I could get more experience.
 
 **Feature Specification:**
 
@@ -34,7 +34,7 @@ Notes:
 * Account management 
 	- Sign in with Google account API
 	- Email management with MailChimp
-		- Integrate both together to automatically add new sign-ups to the list
+		- Integrate both together to add new sign-ups to the list automatically
 	- Text management with Twilio
 		- Text a user when a match is found
 * Feedback
@@ -44,10 +44,10 @@ Notes:
 **Future features** 
 
 * Analytics 
-	- Google analytics
+	- Google Analytics
 	- Use tracking code to get user behavior, sign-ups, and other metrics
 * Security
-	- Make landing page HTTPS secured 
+	- Make landing page HTTPS-secured 
 	- Encrypt user data in Firebase
 * Chatbot
 	- GPT API
@@ -59,6 +59,6 @@ Coding languages: Javascript, HTML, CSS
 
 APIs: Google Maps, Google Sign-in, Firebase, MailChimp, Twilio
 
-What they want their website to be like:
-	- https://www.spotahome.com/
+What they want their website to be like: <br> 
+	- https://www.spotahome.com/ <br> 
 	- https://nomadremote.vercel.app/
