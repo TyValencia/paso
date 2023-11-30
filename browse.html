@@ -1,0 +1,46 @@
+<!--
+Paso WebApp Demo
+by Ty Valencia
+CMSI3801, ENTR4380
+Fall 2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browse Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div> 
+
+    <div class="content">
+        <div id="map"></div> 
+        <div id="house-list"> <!-- Container for house listings -->
+            <!-- House listings will be populated here -->
+        </div>
+    </div>
+
+    <div id="footer"></div> 
+
+    <script>
+      function initMap() {
+        var mapOptions = {
+          center: { lat: 33.97228635389936, lng: -118.4167226108603 }, 
+          zoom: 16
+        };
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzwt-qNpLQj-vMP6nDwRbwa63WdGqWQMA&callback=initMap" async defer></script>
+    <script src="loadContent.js"></script> 
+    <script src="loadHouses.js"></script> 
+</body>
+</html>
+
+
+<!--
+Google Maps API key: AIzaSyDzwt-qNpLQj-vMP6nDwRbwa63WdGqWQMA
+LMU: 33.97228635389936, -118.4167226108603
+-->

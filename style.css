@@ -1,0 +1,206 @@
+/*
+Paso WebApp Demo
+by Ty Valencia
+CMSI3801, ENTR4380
+Fall 2023
+*/
+
+body {
+    font-family: 'Playfair Display', serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header -------------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    height: 60px;
+    font-family: 'Playfair Display', serif;
+}
+
+#logo-link {
+    display: inline-block; 
+    text-decoration: none;
+}
+
+#logo-box img {
+    height: 70px;
+    width: auto;
+    margin-left: -5px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.header-button {
+    background-color: #76b4c1; 
+    color: rgb(0, 47, 47); 
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.header-button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Footer -------------------------------------------------------- */
+footer, .footer-links a, .footer-text {
+    font-family: 'Muli', sans-serif; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: black;
+}
+
+.browse-text {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-links, .footer-text {
+    color: white;
+}
+
+.footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Landing page --------------------------------------------------- */
+/* --- Text box --- */
+#catchyPhrase {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: 'Playfair Display', serif; 
+}
+
+.phrase-text {
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.sub-phrase-text {
+    font-size: 25px; 
+    color: #333;
+    text-align: center;
+    font-style: italic;
+}
+
+/* --- Browse homes --- */
+#browseHomes {
+    display: flex;
+    height: 800px;
+}
+
+.home-image {
+    background: url('images/display_image_4.gif') no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.home-text {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-family: 'Libre Baskerville', serif;
+}
+
+.home-text h2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 40px; 
+}
+
+.home-text p {
+    font-size: 18px;
+    color: #333;
+    width: 66%;
+    line-height: 30px;
+}
+
+.check-houses {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-top: auto; 
+    margin-bottom: 40px; 
+}
+
+.check-houses:hover {
+    text-decoration: underline;
+}
+
+.check-houses:hover {
+    text-decoration: underline;
+}
+
+/* Browse -------------------------------------------------------- */
+.content {
+    display: flex;
+}
+
+#map {
+    width: 66%; 
+    height: 850px; 
+}
+
+#house-list {
+    width: 34%; 
+    padding: 10px;
+    overflow-y: auto; 
+}
+
+.house-item {
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.house-container {
+    width: 560px; 
+    margin: 10px; 
+    padding: 10px; 
+    font-family: 'Playfair Display', serif; 
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+.house-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 10px; 
+}

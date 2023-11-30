@@ -1,0 +1,59 @@
+[
+    {
+        "title": "4 Bedroom, 3 Bathroom in Chicago Suburbs For Sale!",
+        "id": 1,
+        "city": "Arlington Heights, IL",
+        "country": "United States",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "host": "Ty V",
+        "guests": 4,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "price": "12,000",
+        "email": "myemail@gmail.com",
+        "phone": "8181235678",
+        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus.",
+        "image": "house_1.jpeg"
+    },
+    {
+        "title": "We're looking for someone to rent our condo in New York while we're on our honeymoon!",
+        "id": 2,
+        "city": "New York",
+        "country": "United States",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "host": "Daniella R",
+        "guests": 3,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "price": "7,200",
+        "email": "myemail@gmail.com",
+        "phone": "8181235678",
+        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus.",
+        "image": "house_2.jpeg"
+    },
+    {
+        "title": "Apartment in Boston for Sale While I'm at School",
+        "id": 3,
+        "city": "Boston",
+        "country": "United States",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "host": "Jacob D",
+        "guests": 2,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "price": "4,000",
+        "email": "myemail@gmail.com",
+        "phone": "8181235678",
+        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus.",
+        "image": "house_3.png"
+    }
+]
