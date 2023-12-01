@@ -28,7 +28,7 @@ loadHeader();
 loadFooter();
 
 /* Home owner data -------------------------------------------------------- */
-fetch('data/clientData.json')
+fetch('data/homeownerData.json')
   .then(response => response.json())
   .then(houses => {
     displayHouses(houses);
