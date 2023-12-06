@@ -1,0 +1,58 @@
+<!--
+Paso WebApp Demo
+by Ty Valencia
+CMSI3801, ENTR4380
+Fall 2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preferences</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body class="form-page">
+  <form id="preferencesForm">
+    <p class="field-title-2">Update Your Housing Preferences</p>
+    <div>
+        <label for="guests">Guests: </label>
+        <input type="number" id="guests" name="guests">
+    </div>
+    <div>
+        <label for="bedrooms">Bedrooms: </label>
+        <input type="number" id="bedrooms" name="bedrooms">
+    </div>
+    <div>
+      <label for="bathrooms">Bathrooms: </label>
+      <input type="number" id="bathrooms" name="bathrooms">
+    </div>
+    <div>
+      <label for="city">City: </label>
+      <input type="text" id="city" name="city">
+    </div>
+    <div>
+      <label for="country">Country: </label>
+      <input type="text" id="country" name="country">
+    </div>
+    <div>
+        <label for="priceLow">Lowest price: </label>
+        <input type="number" id="priceLow" name="priceLow">
+    </div>
+    <div>
+      <label for="priceHigh">Highest price: </label>
+      <input type="number" id="priceHigh" name="priceHigh">
+    </div>
+    <input type="submit" value="Update Preferences">
+  </form>
+
+<img id="logo" src="/images/display_image_6.webp" alt="Display Image 6">
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+<script type="module" src="preferences.js"></script>
+</body>
+</html>
