@@ -7,14 +7,31 @@ Fall 2023
 
 /* Display header and footer ---------------------------------------------- */
 function loadHeader() {
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading header:', error));
-}
+  fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+          const header = document.getElementById('header');
+          header.innerHTML = data;
 
+          const firebaseAppScript = document.createElement('script');
+          firebaseAppScript.src = 'https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js';
+          header.appendChild(firebaseAppScript);
+
+          const firebaseAuthScript = document.createElement('script');
+          firebaseAuthScript.src = 'https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js';
+          header.appendChild(firebaseAuthScript);
+
+          const firebaseFirestoreScript = document.createElement('script');
+          firebaseFirestoreScript.src = 'https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js';
+          firebaseFirestoreScript.onload = function() {
+              const script = document.createElement('script');
+              script.src = 'header.js';
+              header.appendChild(script);
+          };
+          header.appendChild(firebaseFirestoreScript);
+      })
+      .catch(error => console.error('Error loading header:', error));
+}
 function loadFooter() {
     fetch('footer.html')
         .then(response => response.text())
@@ -26,27 +43,3 @@ function loadFooter() {
 
 loadHeader();
 loadFooter();
-
-/* Home owner data -------------------------------------------------------- */
-fetch('data/homeownerData.json')
-  .then(response => response.json())
-  .then(houses => {
-    displayHouses(houses);
-  })
-  .catch(error => console.error('Error:', error));
-
-function displayHouses(houses) {
-  const container = document.getElementById('house-list'); 
-  houses.forEach(house => {
-    const houseElement = document.createElement('div');
-    houseElement.className = 'house-container';
-    houseElement.innerHTML = `
-      <img src="images/${house.image}" alt="${house.title}">
-      <h3>${house.title}</h3>
-      <p>Posted by ${house.host}</p>
-      <p>${house.city}, ${house.country}</p>
-      <p>${house.bedrooms} Bedrooms, ${house.bathrooms} Bathrooms for $${house.price}</p>
-    `;
-    container.appendChild(houseElement);
-  });
-}

@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     height: 60px;
     font-family: 'Playfair Display', serif;
 }
@@ -42,7 +42,7 @@ header {
 }
 
 .header-button {
-    background-color: #76b4c1; 
+    background-color: #6ec2ed; 
     color: rgb(0, 47, 47); 
     padding: 8px 16px;
     text-align: center;
@@ -97,7 +97,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     font-family: 'Playfair Display', serif; 
 }
 
@@ -204,3 +204,109 @@ footer {
     display: block; 
     margin-bottom: 10px; 
 }
+
+/* Forms -------------------------------------------------------- */
+.form-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    color: #4d4d4d;
+}
+
+.form-page form {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-page form div {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 400px;
+}
+
+.form-page label {
+    margin: 5px 0; 
+    font-size: 1.2em;
+    text-align: right;
+    width: 45%; 
+    margin-right: 5%; 
+}
+
+.form-page input[type="text"], .form-page input[type="password"], .form-page input[type="number"], .form-page textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4d4d4d;
+    padding: 4px; 
+    margin: 5px 0;
+    width: 35%; 
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 300; 
+}
+
+.form-page textarea {
+    height: 100px; 
+}
+
+.form-page input[type="submit"] {
+    font-size: 1.2em; 
+    font-family: inherit; 
+    background-color: #fff;
+    color: #4d4d4d; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px;
+    padding: 5px 10px; 
+    cursor: pointer;
+    margin-top: 20px;
+    width: auto; 
+    box-sizing: border-box;
+    align-self: center;
+    margin-left: -160px;
+}
+
+/* --- Title alignment --- */
+.field-title-1 {
+    font-size: 1.5em; 
+    font-weight: 600; 
+    margin-left: 110px;
+}
+
+.field-title-2 {
+    font-size: 1.2em; 
+    font-weight: 600; 
+    margin-left: 60px;
+}
+
+.field-title-3 {
+    font-size: 1.5em; 
+    font-weight: 600; 
+    margin-left: 165px;
+}
+
+.field-title-4 {
+    font-size: 1.5em; 
+    font-weight: 600; 
+    margin-left: 175px;
+}
+
+.form-page #logo {
+    grid-column: 3;
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: -100px; 
+    border: 0px solid #4d4d4d; 
+    border-radius: 30px; 
+}
+
