@@ -8,11 +8,28 @@ Fall 2023
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign In/Sign Up</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="signin.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <button>Sign in with Google</button>
-    <!-- Add Google Sign in API -->
+<body class="form-page">
+    <form id="signinForm">
+        <p class="field-title-4">Sign In</p>
+    <div>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email">
+    </div>
+    <div>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+  <img id="logo" src="/images/display_image_3.gif" alt="Display Image 3">
+  <script type="module" src="signin.js"></script>
 </body>
 </html>

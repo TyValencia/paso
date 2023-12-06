@@ -1,0 +1,48 @@
+<!--
+Paso WebApp Demo
+by Ty Valencia
+CMSI3801, ENTR4380
+Fall 2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body class="form-page">
+  <form id="signupForm">
+    <p class="field-title-3">Sign Up</p>
+    <div>
+    <label for="fname">First Name: </label>
+    <input type="text" id="fname" name="fname">
+    </div>
+    <div>
+    <label for="lname">Last Name: </label>
+    <input type="text" id="lname" name="lname">
+    </div>
+    <div>
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email">
+    </div>
+    <div>
+    <label for="phone">Phone: </label>
+    <input type="text" id="phone" name="phone">
+    </div>
+    <div>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+  <img id="logo" src="/images/display_image_3.gif" alt="Display Image 3">
+  <script type="module" src="signup.js"></script>
+</body>
+</html>
