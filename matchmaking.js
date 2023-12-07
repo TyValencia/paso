@@ -56,18 +56,27 @@ function matchesPreferences(userPreferences, home) {
 }
 
 function handleMatches(matchList) {
-  const db = firebase.firestore(); 
+  const db = firebase.firestore();
 
-  matchList.forEach(match => {
-    db.collection('matches').add({
-      homeownerID: match.home,
-      userID: match.user
-    })
-    .then((docRef) => {
-      console.log(`Match added with ID: ${docRef.id}`);
-    })
-    .catch((error) => {
-      console.error(`Error adding match: ${error}`);
-    });
+  matchList.forEach(async match => {
+    let matchExists = await db.collection('matches')
+      .where('homeownerID', '==', match.home)
+      .where('userID', '==', match.user)
+      .get();
+
+    if (matchExists.empty) {
+      db.collection('matches').add({
+        homeownerID: match.home,
+        userID: match.user
+      })
+      .then((docRef) => {
+        console.log(`Match added with ID: ${docRef.id}`);
+      })
+      .catch((error) => {
+        console.error(`Error adding match: ${error}`);
+      });
+    } else {
+      console.log('Match already exists in the database.');
+    }
   });
 }

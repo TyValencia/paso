@@ -72,7 +72,7 @@ function getHomeownerData(userEmail) {
                   hostFirstName: firstName,
                   hostLastName: lastName,
                 }).then(function() {
-                  window.location.href = 'landingpage.html';
+                  window.location.href = 'index.html';
                 });
               });
             });

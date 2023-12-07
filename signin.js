@@ -28,7 +28,7 @@ document.getElementById("signinForm").addEventListener("submit", function(event)
     .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
-        window.location.href = 'landingpage.html'; // Redirect to the homepage
+        window.location.href = 'index.html'; 
     })
     .catch((error) => {
         var errorCode = error.code;
