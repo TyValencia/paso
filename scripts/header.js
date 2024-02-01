@@ -22,14 +22,14 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         // User is signed in, replace the Sign In and Sign Up buttons with the Update Your Preferences button
         buttonContainer.innerHTML = `
-            <button id="homeownerButton" class="header-button" onclick="location.href='../pages/homeowner.html'">Register your home</button>
-            <button id="preferencesButton" class="header-button" onclick="location.href='../pages/preferences.html'">Update preferences</button>
+            <button id="homeownerButton" class="header-button" onclick="location.href='pages/homeowner.html'">Register your home</button>
+            <button id="preferencesButton" class="header-button" onclick="location.href='pages/preferences.html'">Update preferences</button>
         `;
     } else {
         // No user is signed in, replace the Update Your Preferences button with the Sign In and Sign Up buttons
         buttonContainer.innerHTML = `
-            <button id="signinButton" class="header-button" onclick="location.href='../pages/signin.html'">SIGN IN</button>
-            <button id="signupButton" class="header-button" onclick="location.href='../pages/signup.html'">SIGN UP</button>
+            <button id="signinButton" class="header-button" onclick="location.href='pages/signin.html'">SIGN IN</button>
+            <button id="signupButton" class="header-button" onclick="location.href='pages/signup.html'">SIGN UP</button>
         `;
     }
 });

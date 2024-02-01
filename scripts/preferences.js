@@ -59,7 +59,7 @@ function getUserPreferences(db, userEmail) {
             }).then(function() {
                 matchUsersAndHomes(db);
                 setTimeout(function() {
-                    window.location.href = '../index.html';
+                    window.location.href = 'index.html';
                 }, 1000); // To load results
             });
             });
