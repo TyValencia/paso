@@ -121,7 +121,7 @@ footer {
 }
 
 .home-image {
-    background: url('images/display_image_4.gif') no-repeat center center;
+    background: url('../images/display_image_4.gif') no-repeat center center;
     background-size: cover;
     width: 50%;
     height: 100%;
