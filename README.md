@@ -1,5 +1,5 @@
 # Paso WebApp 
-![Logo](images/paso_logo_3.png)
+![Logo](images/paso_logo_2.png)
 ### by Ty Valencia for CMSI3801 and ENTR4370
 
 ## Description
