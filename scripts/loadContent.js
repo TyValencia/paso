@@ -7,7 +7,7 @@ Fall 2023
 
 /* Display header and footer ---------------------------------------------- */
 function loadHeader() {
-  fetch('header.html')
+  fetch('../pages/header.html')
       .then(response => response.text())
       .then(data => {
           const header = document.getElementById('header');
@@ -25,7 +25,7 @@ function loadHeader() {
           firebaseFirestoreScript.src = 'https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js';
           firebaseFirestoreScript.onload = function() {
               const script = document.createElement('script');
-              script.src = 'header.js';
+              script.src = '../pages/header.js';
               header.appendChild(script);
           };
           header.appendChild(firebaseFirestoreScript);
@@ -33,7 +33,7 @@ function loadHeader() {
       .catch(error => console.error('Error loading header:', error));
 }
 function loadFooter() {
-    fetch('footer.html')
+    fetch('../pages/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;

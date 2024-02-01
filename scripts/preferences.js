@@ -5,7 +5,7 @@ CMSI3801, ENTR4380
 Fall 2023
 */
 
-import { matchUsersAndHomes } from './matchmaking.js';
+import { matchUsersAndHomes } from './scripts/matchmaking.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCd5MzlOjjihklGRohw_7DL5EPYwBIhsZ0",
@@ -59,7 +59,7 @@ function getUserPreferences(db, userEmail) {
             }).then(function() {
                 matchUsersAndHomes(db);
                 setTimeout(function() {
-                    window.location.href = 'index.html';
+                    window.location.href = '../index.html';
                 }, 1000); // To load results
             });
             });

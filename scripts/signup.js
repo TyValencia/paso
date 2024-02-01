@@ -38,7 +38,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     })
     .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
-        window.location.href = 'index.html'; 
+        window.location.href = '../index.html'; 
     })
     .catch((error) => {
         var errorCode = error.code;
