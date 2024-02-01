@@ -6,11 +6,11 @@
 This is my work on Paso Homes - a 100% online platform where customers can rent living spaces by the month. The website will contain data from homeowners that the customers can look up and connect with. All houses that are registered can be viewed by scrolling down and clicking on "Check Available Houses.""
 
 ## Notable Features
- - matchUsersAndHomes() in [matchmaking.js](https://github.com/TyValencia/pasohomes/blob/main/matchmaking.js) is the main algorithm for searching the database and matching users. 
+ - matchUsersAndHomes() in [matchmaking.js](https://github.com/TyValencia/pasohomes/blob/main/scripts/matchmaking.js) is the main algorithm for searching the database and matching users. 
  - handleMatches() takes those matches and puts them in a new collection in the database. 
  - firebase.auth().onAuthStateChanged(function(user) {...}) observes whether the user's signed-in or not in. 
 
-# Notable Assignments
+## Notable Assignments
  - const db = firebase.firestore() queries the Firebase API 
  - let matchExists = await db.collection('matches') checks if there is already a match in the database 
 
