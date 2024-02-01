@@ -3,7 +3,7 @@
 ### by Ty Valencia for CMSI3801 and ENTR4370
 
 ## Description
-This is my work on Paso Homes - a 100% online platform where customers can rent living spaces by the month. The website will contain data from homeowners that the customers can look up and connect with. All houses that are registered can be viewed by scrolling down and clicking on "Check Available Houses.""
+Paso Homes is a 100% online platform where customers can rent living spaces by the month. The website will contain data from homeowners that the customers can look up and connect with. All houses that are registered can be viewed by scrolling down and clicking on "Check Available Houses.""
 
 ## Notable Features
  - matchUsersAndHomes() in [matchmaking.js](https://github.com/TyValencia/pasohomes/blob/main/scripts/matchmaking.js) is the main algorithm for searching the database and matching users. 
