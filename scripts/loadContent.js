@@ -7,7 +7,7 @@ Fall 2023
 
 /* Display header and footer ---------------------------------------------- */
 function loadHeader() {
-  fetch('../pages/header.html')
+  fetch('pages/header.html')
       .then(response => response.text())
       .then(data => {
           const header = document.getElementById('header');
@@ -33,7 +33,7 @@ function loadHeader() {
       .catch(error => console.error('Error loading header:', error));
 }
 function loadFooter() {
-    fetch('../pages/footer.html')
+    fetch('pages/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
