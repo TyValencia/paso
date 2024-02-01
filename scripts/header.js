@@ -15,7 +15,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-
+console.log("header.js called")
 firebase.auth().onAuthStateChanged(function(user) {
     var buttonContainer = document.getElementById("buttonContainer");
 

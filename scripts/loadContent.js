@@ -29,7 +29,7 @@ function loadHeader() {
           firebaseFirestoreScript.src = 'https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js';
           firebaseFirestoreScript.onload = function() {
               const script = document.createElement('script');
-              script.src = 'pages/header.js';
+              script.src = `${getRootPath()}scripts/header.js`; 
               header.appendChild(script);
           };
           header.appendChild(firebaseFirestoreScript);
