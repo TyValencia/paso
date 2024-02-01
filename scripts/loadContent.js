@@ -7,7 +7,7 @@ Fall 2023
 
 /* Display header and footer ---------------------------------------------- */
 function loadHeader() {
-  fetch('pages/header.html')
+  fetch('../pages/header.html')
       .then(response => response.text())
       .then(data => {
           const header = document.getElementById('header');
