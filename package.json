@@ -1,0 +1,22 @@
+{
+  "name": "pasohomes",
+  "version": "1.0.0",
+  "description": "Paso Homes is a 100% online platform where customers can rent living spaces by the month.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TyValencia/pasohomes.git"
+  },
+  "keywords": [],
+  "author": "Ty Valencia",
+  "test": "c8 mocha",
+  "type": "module",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TyValencia/pasohomes/issues"
+  },
+  "homepage": "https://github.com/TyValencia/pasohomes#readme"
+}
