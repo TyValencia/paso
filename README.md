@@ -1,7 +1,6 @@
 # Paso WebApp 
 ![Logo](images/paso_logo_2.png)
 ### by Ty Valencia for CMSI3801 and ENTR4370
-### [Paso Homes Website](tyvalencia.github.io/pasohomes/) 
 
 ## Description
 Paso Homes is a 100% online platform where customers can rent living spaces by the month. The website will contain data from homeowners that the customers can look up and connect with. All houses that are registered can be viewed by scrolling down and clicking on "Check Available Houses."
